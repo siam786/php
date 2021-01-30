@@ -1,0 +1,48 @@
+/* home popup code new start */
+
+.new h2 {
+    color: #49beab!important;
+    text-align: right;
+    font-size: 39px;
+    line-height: 3rem;
+}
+
+hr{
+    color: 183753;
+}
+.new p {
+    color: #183753;
+}
+
+.new .popup-button {
+    float: right;
+}
+
+.new .popup-button {
+    padding: 8px 15px;
+}
+
+
+.new {
+    border: 0 !important;
+}
+
+
+.home-popup.new {
+	display: flex !important;
+}
+
+.left-image {
+    width: 50%;
+    background: url(https://cdn.healsoftware.ai/wp-content/uploads/2021/01/07015823/bg-popup.png) !important;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover !important;
+}
+
+.right-image{
+    width: 45%;
+    margin-right: 5%;
+}
+
+/* home popup code new end */
