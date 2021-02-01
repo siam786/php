@@ -6,8 +6,7 @@ function sum($oldvalue, $newvalue)
 {
     if ($newvalue % 2 == 0) {
         return $oldvalue + $newvalue;
-    }
-
+    } 
     return $oldvalue;
 }
 
