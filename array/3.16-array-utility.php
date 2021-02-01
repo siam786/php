@@ -25,6 +25,7 @@ function odd($n)
 $persons = array('sojun','siam','rahman','manki','sabbir','rana','rojina');
 
 function filterBys($n){
+  
     return $n[0]=='s';
 }
 
