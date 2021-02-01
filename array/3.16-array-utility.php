@@ -1,5 +1,5 @@
 <?php
-$numbers = array(3, 4, 5, 7, 2, 21, 12, 9);
+$numbers = array(3, 4, 5, 7, 2, 21, 12, 9,20);
 
 function square($n)
 {
@@ -22,8 +22,18 @@ function odd($n)
     return $n  % 2 == 1;
 }
 
+$persons = array('sojun','siam','rahman','manki','sabbir','rana','rojina');
 
+function filterBys($n){
+    return $n[0]=='s';
+}
+
+$newpersons = array_filter($persons,'filterBys');
+
+print_r($newpersons);
 
 // $newarray = array_map('cube',$numbers);
-$newarray = array_filter($numbers, 'odd'); //calback function
-print_r($newarray);
+$evenumbers = array_filter($numbers, 'even'); //calback function
+$oddnumbers = array_filter($numbers, 'odd'); //calback function
+print_r($evenumbers);
+print_r($oddnumbers);
