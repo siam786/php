@@ -28,7 +28,7 @@ $fruits = ["mango", "lemon", "apple", "banana", "Peach"];
                         <p>
                             <?php
                             if (isset($_POST['fruits']) && $_POST['fruits'] != '') {
-                                printf("You have selected: %s", filter_input($_POST, 'fruits'));
+                                printf("You have selected: %s", filter_input(INPUT_POST, 'fruits', FILTER_SANITIZE_STRING));
                             }
 
                             ?>
