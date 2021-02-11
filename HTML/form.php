@@ -1,5 +1,6 @@
 <?php 
 header('X-XSS-Protection:0');
+include_once "functions.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,9 +28,13 @@ header('X-XSS-Protection:0');
                             $name = '';
                             $checked ='';
 
+                          
+
                             if(isset($_REQUEST['cb1']) && $_REQUEST['cb1']==1){
                                 $checked = 'checked';
-                            }?>
+                            }
+                          
+                            ?>
 
                             <?php if(isset($_REQUEST['fname']) && !empty($_REQUEST['fname'])) { 
                              $fname = htmlspecialchars(  $_REQUEST['fname']); }?>
@@ -57,13 +62,13 @@ header('X-XSS-Protection:0');
                             <label for="cb1" class="label-inline">Some checkbox</label>
                         </div>
                         <label class="label">Select Some Fruits</label>
-                        <input type="checkbox" name="fruits[]" value="orange">
+                        <input type="checkbox" name="fruits[]" value="orange" <?php isChecked('fruits','orange'); ?>>
                         <label class="label-inline">Orange</label> <br>
-                        <input type="checkbox" name="fruits[]" value="mango">
+                        <input type="checkbox" name="fruits[]" value="mango" <?php isChecked('fruits','mango'); ?>>
                         <label class="label-inline">Mango</label> <br>
-                        <input type="checkbox" name="fruits[]" value="banana">
+                        <input type="checkbox" name="fruits[]" value="banana" <?php isChecked('fruits','banana'); ?>>
                         <label class="label-inline">Banana</label> <br>
-                        <input type="checkbox" name="fruits[]" value="lemon">
+                        <input type="checkbox" name="fruits[]" value="lemon" <?php isChecked('fruits','lemon'); ?>>
                         <label class="label-inline">Lemon</label> <br>
                         <button type="submit">Submit</button>
                     </form>
