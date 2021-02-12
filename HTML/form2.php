@@ -7,7 +7,7 @@ $allowedFiles =array(
     'image/jpeg'
 );
 if($_FILES['photo']){
-    if(in_array($_FILES['photo']['type'],$allowedFiles)!==false && $_FILES['photo']['size']<1*1024*1024 )
+    if(in_array($_FILES['photo']['type'],$allowedFiles)!==false && $_FILES['photo']['size']<1*1024*1024)
     move_uploaded_file($_FILES['photo']['tmp_name'],"files/".$_FILES['photo']['name']);
 }
 
