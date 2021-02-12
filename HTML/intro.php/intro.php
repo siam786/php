@@ -20,7 +20,7 @@
 
                 </div>
             </div>
-            <iform action="">
+            <iform action="#" method="POST">
                 <label for="fname">First Name</label>
                 <input type="text" name="fname" id="fname">
                 <label for="lname">Last Name</label>
