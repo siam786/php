@@ -1,8 +1,3 @@
 <?php
-
-
-
-$row='';
-for($char=ord('a');$row<=ord('z');++$char);
-
-echo $char;
+echo ord("A");
+echo chr(98);
