@@ -1,5 +1,5 @@
 <?php
-$string = "hello world";
+$string = "hello world siam";
 // $stlenth = strlen($string)-1;
 // for($i=$stlenth;$i>=0;$i--){
 //     echo $string[$i];

@@ -1,5 +1,5 @@
 <?php
-$name ="  ello world /n";
+$name ="  ello world \n,";
 $trim = trim($name);
 echo $trim;
 echo "text";
